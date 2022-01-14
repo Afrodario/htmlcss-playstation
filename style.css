@@ -1,3 +1,25 @@
+/* COMMON */
+section {
+    padding-top: 50px;
+}
+
+.card {
+    border: none;
+}
+
+.ms_btn_buy {
+    background-color: orangered;
+    width: 120px;
+    border: 1px solid orangered;
+}
+
+/* .ms_btn_buy:hover {
+    background-color: orangered;
+    box-shadow: red;
+    border: 1px solid orangered;
+} */
+
+/* Regole navbar */
 #ms_navbar_top {
     height: 40px;
     background-color: black;
@@ -5,6 +27,40 @@
 
 #sony_logo {
     width: 80px;
+}
+
+/* Regole jumbotron */
+#jumbotron .container-fluid {
+    height: 90vh;
+    background-image: url(img/jumbo-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#jumbotron .container-fluid img {
+    width: 40%;
+}
+
+#ms_jumbotron_bottom {
+    padding-top: 30px;
+}
+
+#ms_jumbotron_bottom img {
+    border-radius: 15px;
+}
+
+#ms_jumbotron_bottom img:hover {
+    border: 2px solid blue;
+    border-radius: 15px;
+    padding: 3px;
+}
+
+.ms_gallery_new {
+    background-color: #1f1f1f;
+}
+
+.ms_gallery_new .card {
+    background-color: #1f1f1f;
 }
 
 #playstation-plus {
