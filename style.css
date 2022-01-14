@@ -86,8 +86,16 @@ section {
     background-color: #bebcbb;
 }
 
+#ps_plus_logo {
+    width: 300px;
+}
+
 #ps-now {
     background-color: #161c3b;
+}
+
+#ps_now_logo {
+    width: 300px;
 }
 
 footer {
