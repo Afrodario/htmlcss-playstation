@@ -38,7 +38,11 @@ section {
 }
 
 #jumbotron .container-fluid img {
-    width: 40%;
+    width: 60%;
+}
+
+.card-img-overlay h2, .card-img-overlay p {
+    padding: 15px 0;
 }
 
 #ms_jumbotron_bottom {
@@ -53,6 +57,17 @@ section {
     border: 2px solid blue;
     border-radius: 15px;
     padding: 3px;
+}
+
+.ms_banner_new {
+    height: 90vh;
+    background-image: url(img/it-takes-two-hero-banner-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ms_banner_new img {
+    width: 300px;
 }
 
 .ms_gallery_new {
