@@ -74,6 +74,10 @@ section {
     background-color: #1f1f1f;
 }
 
+.ms_gallery_new img {
+    border-radius: 15px;
+}
+
 .ms_gallery_new .card {
     background-color: #1f1f1f;
 }
