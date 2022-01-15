@@ -13,6 +13,23 @@ section {
     border: 1px solid orangered;
 }
 
+.ms_arrow_down, .ms_arrow_hover {
+    width: 10px;
+    margin: 0 5px;
+}
+
+.ms_arrow_hover {
+    display: none;
+}
+
+.nav-item.dropdown:active a .ms_arrow_down {
+    display: none;
+}
+
+.nav-item.dropdown:hover a .ms_arrow_hover {
+    display: inline-block;
+}
+
 /* .ms_btn_buy:hover {
     background-color: orangered;
     box-shadow: red;
@@ -27,11 +44,20 @@ section {
 
 #sony_logo {
     width: 80px;
+    margin-right: 10px;
+}
+
+.ms_lens {
+    width: 30px;
+}
+
+.dropdown-toggle::after {
+    display: none;
 }
 
 /* Regole jumbotron */
 #jumbotron .container-fluid {
-    height: 90vh;
+    height: 100vh;
     background-image: url(img/jumbo-bg.png);
     background-position: center;
     background-repeat: no-repeat;
