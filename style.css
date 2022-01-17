@@ -1,21 +1,24 @@
 /* COMMON */
+body {
+    overflow-x: hidden;
+}
+
 section {
-    padding-top: 50px;
+    padding: 50px 0;
 }
 
 .card {
     border: none;
 }
 
+.card-img-overlay h2, .card-img-overlay p {
+    padding: 15px 0;
+}
+
 .ms_btn_buy {
     background-color: orangered;
     width: 120px;
     border: 1px solid orangered;
-}
-
-.ms_arrow_down, .ms_arrow_hover {
-    width: 10px;
-    margin: 0 5px;
 }
 
 /* .ms_btn_buy:hover {
@@ -43,6 +46,19 @@ section {
     display: none;
 }
 
+.ms_arrow_down {
+    width: 10px;
+    margin: 0 5px;
+}
+
+.dropdown-menu.show {
+    display: flex;
+}
+
+li.nav-item.active:active {
+    border: 2px solid orange;
+}
+
 /* Regole jumbotron */
 #jumbotron .container-fluid {
     height: 100vh;
@@ -55,8 +71,8 @@ section {
     width: 60%;
 }
 
-.card-img-overlay h2, .card-img-overlay p {
-    padding: 15px 0;
+#jumbotron .row .col-12 {
+    padding: 50px 0;
 }
 
 #ms_jumbotron_bottom {
@@ -72,13 +88,12 @@ section {
     border: 2px solid blue;
     border-radius: 15px;
     padding: 3px;
-    transform: translateY(-25px);
+    transform: translateY(-15px);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
 
 .ms_banner_new {
-    height: 90vh;
     background-image: url(img/it-takes-two-hero-banner-desktop.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -86,6 +101,10 @@ section {
 
 .ms_banner_new img {
     width: 300px;
+}
+
+.ms_banner_new .row .col-12 {
+    padding: 50px 0;
 }
 
 .ms_gallery_new {
@@ -102,6 +121,7 @@ section {
 
 #playstation-plus {
     background-color: #bebcbb;
+    padding-bottom: 20px;
 }
 
 #ps_plus_logo {
@@ -120,12 +140,30 @@ footer {
     background-color: #00439c;
 }
 
+.ms_link_footer {
+    list-style-type: none;
+}
+
+.ms_link_footer li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .globe_logo {
     width: 15px;
 }
 
 .sie_logo {
     width: 150px;
+}
+
+.ps-logo {
+    width: 150px;
+    filter: brightness(0) invert(1);
+}
+
+.ms_gallery_new {
+    padding-top: 30px;
 }
 
 #ms_gallery_product img {
@@ -139,10 +177,9 @@ footer {
 
 .ms_border_active {
     width: 100%;
-    border: 1px solid #4095da;
-    display: none;
+    border: 1px solid transparent;
 }
 
 #ms_gallery_product .card:hover .ms_border_active {
-    display: block;
+    border-color: #4095da;
 }
