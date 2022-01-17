@@ -51,11 +51,27 @@ section {
     margin: 0 5px;
 }
 
+.dropdown {
+    position: static;
+}
+
+.dropdown-menu {
+    border: none;
+    border-radius: 0;
+}
+
 .dropdown-menu.show {
     display: flex;
 }
 
-li.nav-item.active:active {
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin-top: -1px;
+}
+
+li.nav-item:active {
     border: 2px solid orange;
 }
 
