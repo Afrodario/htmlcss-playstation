@@ -166,6 +166,10 @@ footer {
     padding-top: 30px;
 }
 
+#ms_gallery_product .card:first-child img {
+    filter: none;
+}
+
 #ms_gallery_product img {
     filter: grayscale(100%);
     cursor: pointer;
@@ -175,11 +179,16 @@ footer {
     filter: none;
 }
 
-.ms_border_active {
+.ms_border_hover {
     width: 100%;
     border: 1px solid transparent;
 }
 
-#ms_gallery_product .card:hover .ms_border_active {
+.ms_border_active {
+    width: 100%;
+    border: 1px solid #4095da;
+}
+
+#ms_gallery_product .card:hover .ms_border_hover {
     border-color: #4095da;
 }
