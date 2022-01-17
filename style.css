@@ -15,17 +15,16 @@ section {
     padding: 15px 0;
 }
 
+/* Regole pulsanti */
 .ms_btn_buy {
     background-color: orangered;
     width: 120px;
     border: 1px solid orangered;
 }
 
-/* .ms_btn_buy:hover {
-    background-color: orangered;
-    box-shadow: red;
-    border: 1px solid orangered;
-} */
+.btn-light {
+    font-weight: bold;
+}
 
 /* Regole navbar */
 #ms_navbar_top {
@@ -71,8 +70,12 @@ ul.dropdown-menu.show li {
     margin-top: -1px;
 }
 
-li.nav-item:active {
-    border: 2px solid orange;
+li.nav-item {
+    border: 2px solid transparent;
+}
+
+li.nav-item:hover {
+    border-color: orange;
 }
 
 ul.ms_drop_list {
@@ -89,6 +92,12 @@ ul.ms_drop_list li {
 ul.ms_drop_list li:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+ul.ms_drop_list li::before {
+    content: "\25CF";
+    margin-right: 10px;
+    color: #4095da;
 }
 
 /* Regole jumbotron */
