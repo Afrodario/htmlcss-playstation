@@ -60,8 +60,8 @@ section {
     border-radius: 0;
 }
 
-.dropdown-menu.show {
-    display: flex;
+ul.dropdown-menu.show li {
+    display: inline-block;
 }
 
 .dropdown-menu[data-bs-popper] {
@@ -73,6 +73,22 @@ section {
 
 li.nav-item:active {
     border: 2px solid orange;
+}
+
+ul.ms_drop_list {
+    margin: 5px;
+    list-style-type: circle;
+}
+
+ul.ms_drop_list li {
+    padding: 0 10px;
+    color: black;
+    font-weight: bold;
+}
+
+ul.ms_drop_list li:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /* Regole jumbotron */
